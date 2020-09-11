@@ -1,0 +1,206 @@
+body{
+  background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    top: -10px;
+    background-color: white;
+    left: 0;
+}
+
+main{
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+}
+main div{
+  right: 160px;
+}
+
+.spinner-border{
+  display: flex;
+  align-items: center;
+  margin: 30vh auto;
+}
+.logo{
+  width: 120px;
+  height: 80px !important; margin-left: 5.5rem;
+}
+
+img{
+  width : 70%;
+  height: 166px !important;
+}
+.overall-container{
+  margin-top: 7rem;
+}
+.overall-container .mb-4{
+  margin-bottom: 2.6rem !important;
+}
+.envelope{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.envelope  div{
+  cursor: pointer;
+}
+.card{
+  width: 300px;
+   height: 300px;
+}
+.count-total{
+  position: absolute;
+  font-size: 14px;
+  left: 60%;
+  top: 20%;
+  padding: .3rem .7rem;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+}
+
+.containers{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90vw;
+  height: 90vh;
+}
+
+.back{
+  margin-left: 4rem;
+  text-decoration: none;
+  padding: .6rem 1.3rem;
+   position: relative;
+   top: 30px;
+   font-weight: bold;
+   background: #FFFFFF;
+   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+.container .details{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 45%;
+}
+.first h1{
+  margin-top: 0;
+}
+
+.svg{
+  position: absolute;
+  top: 25%;
+  left: 1%;
+}
+.price_button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price_button p {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.price_button button {
+  background-color: #BD3F32;
+  font-weight: bold;
+  height: 40px;
+  width: 100px;
+  color: white;
+  border-style: none;
+  border-radius: 50px;
+  transition: background-color 1s ease-in-out;
+}
+.price_button button:hover{
+  background-color: #e7230d;
+}
+.price_button button:focus{
+   outline: none;
+}
+.price{
+  cursor: pointer;
+}
+.empty-cart{
+  position: absolute;
+  top: 40%;
+  right: 30%;
+  color: rgba(255, 0, 0, 0.664);
+  font-weight: bold;
+}
+
+@media (max-width: 466px) {
+  main{
+    width: 90%;
+  }
+  main div{
+    right: auto;
+  }
+  .logo{
+    margin-left: 0;
+  }
+ .svg{
+   top: 10%;
+ }
+ .header select{
+   align-self: flex-start;
+   width: 50%;
+   margin-top: 2rem;
+ }
+ .main-header h1{
+   font-size: 20px;
+   text-align: left;
+   margin-bottom: 1rem;
+   padding-top: 1rem;
+ }
+  .card{
+   width: 300px; 
+   height: 300px;
+   box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3)
+  } 
+  .mb-4{
+      display: flex;
+      justify-content: center;
+  }
+  .envelope div{
+   height: 500px;
+  }
+  .containers{
+    flex-direction: column;
+    margin-top: 6rem;
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 1rem
+  }
+  .containers .details{
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    width: 90%;
+  }
+  .flag{
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+  .back{
+    margin-left: 0;
+    text-decoration: none;
+   margin-left: 1rem
+  }
+  
+  .first{
+    margin-bottom: 2rem;
+  }
+  img{
+    width: 95%;
+  }
+ }
+ .back:hover{
+  text-decoration: none;
+}
